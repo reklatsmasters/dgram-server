@@ -1,0 +1,63 @@
+{
+  "name": "dgram-server",
+  "version": "0.0.0",
+  "description": "Stream-based UDP server.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "xo",
+    "cover": "jest --coverage",
+    "test": "npm run lint && jest",
+    "test-ci": "npm run lint && npm run cover"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reklatsmasters/dgram-server.git"
+  },
+  "keywords": [
+    "udp",
+    "server",
+    "dgram",
+    "serve",
+    "listen"
+  ],
+  "author": "Dmitriy Tsvettsikh <me@reklatsmasters.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/reklatsmasters/dgram-server/issues"
+  },
+  "homepage": "https://github.com/reklatsmasters/dgram-server#readme",
+  "engines": {
+    "node": ">=8"
+  },
+  "dependencies": {
+    "unicast": "^1.1.0"
+  },
+  "devDependencies": {
+    "jest": "^22.2.2",
+    "xo": "^0.18.2"
+  },
+  "jest": {
+    "modulePaths": [
+      "<rootDir>"
+    ],
+    "testRegex": "test/(.*)\\.js$",
+    "coverageDirectory": "<rootDir>/coverage",
+    "coveragePathIgnorePatterns": [
+      "/test/",
+      "/examples/"
+    ]
+  },
+  "xo": {
+    "semicolon": false,
+    "space": 2,
+    "rules": {
+      "object-curly-spacing": [
+        "error",
+        "always"
+      ]
+    },
+    "ignores": [
+      "**/test/**"
+    ]
+  }
+}
