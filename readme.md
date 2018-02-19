@@ -75,7 +75,7 @@ Don't call `server.address()` until the 'listening' event has been emitted.
 
 The number of concurrent associations on the server.
 
-## Reated
+## Related
 
 * [`unicast`](https://npmjs.org/package/unicast) - Unicast implementation of UDP Datagram sockets.
 
